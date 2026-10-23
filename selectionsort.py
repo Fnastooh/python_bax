@@ -4,11 +4,15 @@ n = len(numbers)
 
 
 for i in range(n-1):
-    min = 0
-    MinIndex = -1
-    for j in range(i+1, n-1):
+    min = numbers[i]
+    MinIndex = i
+    for j in range(i+1, n):
         if numbers[j] < min:
             min = numbers[j]
             MinIndex = j
     if MinIndex != -1:
-        temp = 
+        temp = numbers[i]
+        numbers[i] = numbers[MinIndex]
+        numbers[MinIndex] = temp
+
+print(numbers)
