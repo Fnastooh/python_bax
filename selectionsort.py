@@ -9,7 +9,6 @@ for i in range(n-1):
         if numbers[j] < min:
             min = numbers[j]
             MinIndex = j
-    if MinIndex != -1:
         temp = numbers[i]
         numbers[i] = numbers[MinIndex]
         numbers[MinIndex] = temp
