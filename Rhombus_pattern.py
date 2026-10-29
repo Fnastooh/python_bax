@@ -1,7 +1,7 @@
-num = int(input("enter your num: "))
+n = int(input("n: "))
 
-for i in range(1, num + 1):
-    print(" " * (num - i) + "*" * i + "*" * i)
+for i in range(1, n + 1):
+    print(" " * (n - i) + "*" * (2 * i - 1))
 
-for j in range(num-1, 0, -1): 
-    print(" " * (num - j) + "*" * j + "*" * j)
+for i in range(n - 1, 0, -1):
+    print(" " * (n - i) + "*" * (2 * i - 1))
